@@ -38,7 +38,7 @@ csvConverter = csvConverter || {};
             // If the value contained in the JSON object is a string:
             // Perform a regex test to check and see if the value has a comma already in place and escape the value. 
             // e.g. "Smith, Jones" as a value should not be separated two different columns. 
-            value = regex.test(value) ? '"' + value + '"' : value;
+            value = '"' + value + '"';
           }
           line += value;
         }
